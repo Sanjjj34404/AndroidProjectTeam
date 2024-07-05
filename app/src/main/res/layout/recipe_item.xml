@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/itemback"
+        android:layout_margin="5dp"
+        >
+        <LinearLayout
+            android:padding="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/abc_vector_test"
+                android:layout_weight=".50"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:id="@+id/recipeimg"/>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight=".50"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recipe Label"
+                    android:textColor="@color/white"
+                    android:id="@+id/recipeLabel"
+                    />
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_weight=".50"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Calories:"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/calories"
+                        android:layout_weight=".50"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="721.5"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/viewRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="View Recipe"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
